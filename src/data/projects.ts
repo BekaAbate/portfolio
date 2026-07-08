@@ -41,7 +41,7 @@ export const projects: Project[] = [
     subtitle: "AI-Powered Presentation Builder",
     category: "Full-Stack Web Application / AI Tool",
     live: "https://cosmic-app-uywz.onrender.com",
-    demo: "https://www.youtube.com/watch?v=4HlzKgsLDqs",
+    demo: "https://youtu.be/LFiB26x0mrI",
     description:
       "An AI-powered presentation platform that makes designing professional PowerPoint slides 10x faster. Leveraging the Google Gemini API, Cosmic turns prompt inputs, uploaded files (PDF, Word, PPTX), or webpage URLs into rich presentation outlines. Users can dynamically edit presentation layouts, rearrange structural nodes via a drag-and-drop tree editor, customize templates, and download production-ready PPTX presentations directly.",
     stack: [

@@ -9,10 +9,12 @@ export default function Hero() {
       <h1 className="font-serif text-[18vw] font-bold leading-[0.82] tracking-tighter uppercase md:text-[13vw] lg:text-[11vw] flex flex-col items-center justify-center text-center md:flex-row mb-4">
         <span>Beka</span>
         <div>
-          <span className="ml-6 text-stroke inline-block">Abate</span>
+          <span className="md:ml-6 mt-2 md:mt-0 text-stroke inline-block">
+            Abate
+          </span>
         </div>
       </h1>
-      <div className="ffont-serif flex flex-col sm:flex-row items-center justify-center uppercase font-medium gap-3 text-xl md:text-2xl mb-2 text-center">
+      <div className="ffont-serif flex flex-col sm:flex-row items-center justify-center uppercase font-medium gap-2 text-xl md:text-2xl mb-2 text-center">
         <h2>Full-Stack Developer</h2>
         <span className="w-1 h-1 rounded-full bg-white shrink-0 hidden sm:block" />
         <h2>Front-End Specialist</h2>

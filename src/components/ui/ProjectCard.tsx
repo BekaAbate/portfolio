@@ -1,5 +1,7 @@
 import { Project } from "@/data/projects";
-import { ArrowUpRight } from "lucide-react";
+
+import { ExternalLink } from "lucide-react";
+import { SiGithub, SiYoutube } from "react-icons/si";
 import Image from "next/image";
 
 export default function ProjectCard({
@@ -8,24 +10,56 @@ export default function ProjectCard({
   image,
   subtitle,
   category,
-  year,
-  role,
   description,
   stack,
+  live,
+  demo,
+  github,
 }: Project) {
   return (
-    <a
-      href="#"
-      className="group relative flex flex-col overflow-hidden border border-border p-6 md:p-8"
-    >
+    <div className="group relative flex flex-col overflow-hidden border border-muted-foregroud hover:border-foreground transition-all p-6 md:p-8">
       {/* Top row */}
-      <div className="mb-8 flex items-start justify-between font-mono text-[10px] uppercase tracking-wide">
+      <div className="mb-2 flex items-center justify-between font-mono text-[10px] uppercase tracking-wide">
         <span className="">{id}</span>
-        <span>{year}</span>
+        <div className="flex items-center gap-1">
+          {live && (
+            <a
+              href={live}
+              aria-label={`${title} live demo`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex h-9 w-9 items-center justify-center border border-border text-muted-foreground transition-colors hover:border-foreground hover:text-foreground"
+            >
+              <ExternalLink className="h-4.5 w-4.5" />
+            </a>
+          )}
+          {github && (
+            <a
+              href={github}
+              aria-label={`${title} source code`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex h-9 w-9 items-center justify-center border border-border text-muted-foreground transition-colors hover:border-foreground hover:text-foreground"
+            >
+              <SiGithub className="h-4 w-4" />
+            </a>
+          )}
+          {demo && (
+            <a
+              href={demo}
+              aria-label={`${title} video`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex h-9 w-9 items-center justify-center border border-border text-muted-foreground transition-colors hover:border-foreground hover:text-foreground"
+            >
+              <SiYoutube className="h-4 w-4" />
+            </a>
+          )}
+        </div>
       </div>
 
       {/* Visual mock */}
-      <div className="relative mb-8 aspect-[16/9] overflow-hidden border border-border bg-background">
+      <div className="relative mb-8 aspect-[16/9] overflow-hidden border border-muted-foregroud bg-background">
         <div className="grid-bg absolute inset-0 opacity-70" />
         <Image
           src={image}
@@ -39,18 +73,14 @@ export default function ProjectCard({
       {/* Title */}
       <div className="mb-4 flex items-start justify-between gap-4">
         <div>
-          <h3 className="font-display text-4xl font-bold uppercase leading-none tracking-tighter md:text-5xl">
-            {title}
-          </h3>
-          <p className="mt-1 font-mono text-xs uppercase tracking-widest">
+          <p className="mt-1 font-mono text-sm uppercase tracking-widest">
             {subtitle} — {category}
           </p>
         </div>
-        <ArrowUpRight className="h-6 w-6 shrink-0 transition-transform group-hover:-translate-y-1 group-hover:translate-x-1" />
       </div>
 
       {/* Description */}
-      <p className="font-mono mb-6 text-sm lowercase leading-relaxed text-muted-foreground">
+      <p className="font-mono mb-6 text-xs lowercase leading-relaxed text-muted-foregroud">
         {description}
       </p>
 
@@ -58,12 +88,12 @@ export default function ProjectCard({
         {stack.map((st, index) => (
           <span
             key={index}
-            className="border border-border px-2 py-1 font-mono text-[10px] uppercase tracking-widest text-muted-foreground"
+            className="border border-muted-foregroud px-2 py-1 font-mono text-[10px] uppercase tracking-widest text-muted-foregroud"
           >
             {st}
           </span>
         ))}
       </div>
-    </a>
+    </div>
   );
 }

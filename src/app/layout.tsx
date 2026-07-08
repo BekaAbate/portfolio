@@ -12,7 +12,6 @@ const jetbrainsMono = JetBrains_Mono({
   subsets: ["latin"],
   variable: "--font-jetbrains-mono",
   display: "swap",
-  // Optional: specify weights you need
   weight: ["400", "500", "600", "700"],
 });
 
@@ -31,7 +30,7 @@ export default function RootLayout({
       lang="en"
       className={`${spaceGrotesk.variable} ${jetbrainsMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">
+      <body className="min-h-full flex flex-col bg-background">
         <>
           <Backgroud />
           {children}

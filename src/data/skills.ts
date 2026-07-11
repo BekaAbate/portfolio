@@ -20,93 +20,98 @@ import {
   SiPostgresql,
   SiMysql,
   SiSqlite,
-} from "react-icons/si";
+  SiNestjs,
+} from 'react-icons/si';
 
 export const skills = [
   {
-    name: "HTML",
+    name: 'HTML',
     icon: SiHtml5,
   },
   {
-    name: "CSS3",
+    name: 'CSS3',
     icon: SiCss,
   },
   {
-    name: "JavaScript",
+    name: 'JavaScript',
     icon: SiJavascript,
   },
   {
-    name: "TypeScript",
+    name: 'TypeScript',
     icon: SiTypescript,
   },
   {
-    name: "React & R.Native",
+    name: 'React & R.Native',
     icon: SiReact,
   },
   {
-    name: "Expo",
+    name: 'Expo',
     icon: SiExpo,
   },
   {
-    name: "Tanstack",
+    name: 'Tanstack',
     icon: SiTanstack,
   },
   {
-    name: "Shadcn",
+    name: 'Shadcn',
     icon: SiShadcnui,
   },
   {
-    name: "Next.js",
+    name: 'Next.js',
     icon: SiNextdotjs,
   },
   {
-    name: "Tailwind CSS",
+    name: 'Tailwind CSS',
     icon: SiTailwindcss,
   },
   {
-    name: "Framer Motion",
+    name: 'Framer Motion',
     icon: SiFramer,
   },
   {
-    name: "Node.js",
+    name: 'Node.js',
     icon: SiNodedotjs,
   },
   {
-    name: "Go",
+    name: 'Go',
     icon: SiGo,
   },
   {
-    name: "Express",
+    name: 'Expressjs',
     icon: SiExpress,
   },
   {
-    name: "Gin",
+    name: 'Nestjs',
+    icon: SiNestjs,
+  },
+  {
+    name: 'Gin',
     icon: SiGin,
   },
   {
-    name: "Prisma",
+    name: 'Prisma',
     icon: SiPrisma,
   },
 
   {
-    name: "Drizzle",
+    name: 'Drizzle',
     icon: SiDrizzle,
   },
   {
-    name: "PostgreSQL",
+    name: 'PostgreSQL',
     icon: SiPostgresql,
   },
   {
-    name: "mySQL",
+    name: 'mySQL',
     icon: SiMysql,
   },
   {
-    name: "SQLite",
+    name: 'SQLite',
     icon: SiSqlite,
   },
 
   {
-    name: "Socket.io",
+    name: 'Socket.io',
     icon: SiSocketdotio,
   },
 ];

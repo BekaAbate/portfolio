@@ -1,4 +1,4 @@
-import Button from "../ui/Button";
+import Button from '../ui/Button';
 
 export default function Hero() {
   return (
@@ -17,7 +17,7 @@ export default function Hero() {
       <div className="ffont-serif flex flex-col sm:flex-row items-center justify-center uppercase font-medium gap-2 text-xl md:text-2xl mb-2 text-center">
         <h2>Full-Stack Developer</h2>
         <span className="w-1 h-1 rounded-full bg-white shrink-0 hidden sm:block" />
-        <h2>Front-End Specialist</h2>
+        <h2>Mobile App Developer</h2>
       </div>
       <p className="font-mono text-md mb-8 text-center text-muted-foregroud">
         I turn complex problems into elegant interfaces.

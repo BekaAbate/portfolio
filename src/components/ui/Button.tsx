@@ -2,7 +2,7 @@ export default function Button() {
   return (
     <a
       href="/Beka Abate - Resume.pdf"
-      download={"/Beka-abate-cv.pdf"}
+      download={'/Beka-abate-resume.pdf'}
       className="relative overflow-hidden p-[1px] shadow-[0_0_2px_rgba(255,255,255,0.1)] cursor-pointer"
     >
       {/* Animated Border */}

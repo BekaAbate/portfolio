@@ -1,4 +1,4 @@
-import { navLinks, socialLinks } from "@/data/links";
+import { navLinks, socialLinks } from '@/data/links';
 
 export default function Footer() {
   return (
@@ -15,13 +15,11 @@ export default function Footer() {
             <p className="uppercase font-serif text-sm mb-3">my socials</p>
             <div className="flex flex-col gap-2 text-sm font-mono text-muted-foregroud">
               {socialLinks.map((social) => (
-                <a
-                  key={social.label}
-                  className="hover:text-foreground"
-                  href={social.url}
-                >
-                  {social.label}
-                </a>
+                <div key={social.label}>
+                  <a className="hover:text-foreground" href={social.url}>
+                    {social.label}
+                  </a>
+                </div>
               ))}
             </div>
           </div>
@@ -29,13 +27,11 @@ export default function Footer() {
             <p className="uppercase font-serif text-sm mb-3">short links</p>
             <div className="flex flex-col gap-2 text-sm font-mono text-muted-foregroud">
               {navLinks.map((nav) => (
-                <a
-                  key={nav.label}
-                  className="hover:text-foreground"
-                  href={nav.href}
-                >
-                  {nav.label}
-                </a>
+                <div key={nav.label}>
+                  <a className="hover:text-foreground" href={nav.href}>
+                    {nav.label}
+                  </a>
+                </div>
               ))}
             </div>
           </div>

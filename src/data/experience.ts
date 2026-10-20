@@ -7,19 +7,27 @@ interface Experience {
 }
 export const experiences: Experience[] = [
   {
-    number: "01",
-    period: "2024",
-    role: "Frontend Developer Intern",
-    company: "ASTU ICT Center",
+    number: '01',
+    period: '2024',
+    role: 'Frontend Developer Intern',
+    company: 'ASTU ICT Center',
     description:
-      "Engineered a secure peer-to-peer Employee Evaluation System for staff members using React and Tailwind CSS. Designed administrative dashboards with responsive data metrics widgets, integrating clients with core university APIs to enable real-time data visualization and reporting.",
+      'Engineered a secure peer-to-peer Employee Evaluation System for staff members using React and Tailwind CSS. Designed administrative dashboards with responsive data metrics widgets, integrating clients with core university APIs to enable real-time data visualization and reporting.',
   },
   {
-    number: "02",
-    period: "2025",
-    role: "Full-Stack Developer Intern",
-    company: "GoldenAge Technology PLC",
+    number: '02',
+    period: '2025',
+    role: 'Full-Stack Developer Intern',
+    company: 'GoldenAge Technology PLC',
     description:
-      "Contributed full-stack updates to a slide template generator app using modern web technologies. Utilized GitHub workflows and conventional commits in an agile environment, collaborating with the team to ship new features and improvements.",
+      'Contributed full-stack updates to a slide template generator app using modern web technologies. Utilized GitHub workflows and conventional commits in an agile environment, collaborating with the team to ship new features and improvements.',
+  },
+  {
+    number: '03',
+    period: 'present',
+    role: 'Native Mobile App Developer',
+    company: 'Ethiopian Artificial Intelligence Institute (EAII)',
+    description:
+      'Developing native Android applications using Kotlin, contributing to mobile application development and user interface implementation. Working with Android development tools and modern UI technologies to build functional, maintainable, and user-focused mobile experiences.',
   },
 ];
